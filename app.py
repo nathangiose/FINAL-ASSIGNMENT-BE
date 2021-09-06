@@ -168,7 +168,7 @@ def user_registration():
             db.sending_to_database(query, values)
 
             message = Message('Thank You', sender='nathanjohngiose@gmail.com', recipients=[email])
-            message.body = "Thank you for registering happy shopping"
+            message.body = "Thank you for registering. Enjoy your day."
             mail.send(message)
             response["message"] = 'Success'
             response["status_code"] = 201
